@@ -1,5 +1,6 @@
 export const initialState = { loader: true };
 
+// reducer
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case "fetching":
