@@ -14,7 +14,7 @@ const Container = () => {
 
   // 1. initialState for implementing first state data
   // 2. dispatch (run function reducer with parameter)
-  // 3. reducer (function reducer read parameter from dispatch and return new value)
+  // 3. reducer (in reducer function read parameter from dispatch and return new value)
   // 4. state (read function reducer)
   const [state, dispatch] = useReducer(reducer, initialState);
 
