@@ -12,10 +12,10 @@ export const ContainerContext = createContext(initialState);
 const Container = () => {
   const API = "https://script.google.com/macros/s/AKfycbwKAT11jZmYEH-Xbm-dc0OL2GeB36i7oFYQupxPMP5qMRTzmXB8/exec";
 
-  // initialState for implementing useReducer initial data
-  // 1. dispatch (run function reducer with parameter object key 'type')
-  // 2. reducer (function reducer read 'type' from parameter dispatch and return to state)
-  // 3. state (read function reducer)
+  // 1. initialState for implementing useReducer initial data
+  // 2. dispatch (run function reducer with parameter)
+  // 3. reducer (function reducer read parameter from dispatch and return new value)
+  // 4. state (read function reducer)
   const [state, dispatch] = useReducer(reducer, initialState);
 
   let headersConfig = {
